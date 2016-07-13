@@ -2,12 +2,16 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 5px solid $brand-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    .wrapper {
+      position: relative;
+    }
 }
 
 .site-title {
@@ -24,9 +28,17 @@
     }
 }
 
+.site-logo {
+    display: inline-block;
+    width: 150px;
+}
+
 .site-nav {
     float: right;
     line-height: 56px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 
     .menu-icon {
         display: none;

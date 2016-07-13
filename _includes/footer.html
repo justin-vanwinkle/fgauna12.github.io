@@ -25,6 +25,14 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+
+          {% if site.linkedin_profile %}
+          <li>
+            <a href="https://{{ site.linkedin_profile }}">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+          {% endif %}
         </ul>
       </div>
 
