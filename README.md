@@ -1,2 +1,2 @@
 # fgauna12.github.io
-My Blog
+No judging please

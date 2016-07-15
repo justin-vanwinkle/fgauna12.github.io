@@ -2,8 +2,6 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -28,9 +26,7 @@
 
           {% if site.linkedin_profile %}
           <li>
-            <a href="https://{{ site.linkedin_profile }}">
-              <i class="fa fa-linkedin"></i> LinkedIn
-            </a>
+            {% include icon-linkedin.html %}
           </li>
           {% endif %}
         </ul>

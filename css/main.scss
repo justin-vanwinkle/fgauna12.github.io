@@ -6,18 +6,20 @@
 
 
 // Our variables
-$base-font-family: Tahoma, Arial, sans-serif;
+$secondary-font-family: 'Roboto', sans-serif;
+$base-font-family: 'Open Sans', sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     20px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #1B75BB;
 $secondary-color:  #404041;
+$brand-white-gray: #fafafa;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

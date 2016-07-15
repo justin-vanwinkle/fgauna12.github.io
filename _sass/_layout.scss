@@ -110,8 +110,15 @@
  * Site footer
  */
 .site-footer {
+    @extend .dark-theme;
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: $brand-color;
+    color: #fafafa;
+
+    .username{
+        margin-left: 3px;
+    }
 }
 
 .footer-heading {
@@ -127,7 +134,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    //color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -181,6 +188,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: $brand-white-gray;
 }
 
 .page-heading {
