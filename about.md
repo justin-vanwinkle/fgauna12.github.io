@@ -8,7 +8,7 @@ permalink: /about/
 
 My name is Facundo Gauna. Sometimes I go by Frank.
 
-I'm a software developer from sunny Orlando, Fl `:palm_tree`. I got a degree in Computer Engineering from University of Central Florida.
+I'm a software developer from sunny Orlando, Fl `:palm_tree:`. I got a degree in Computer Engineering from University of Central Florida.
 
 I'm not active on Facebook, Twitter, or Google+ so you can follow me but I won't guarantee anything.
 Rarely on Skype either.  
