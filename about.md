@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-![]({{site.url}}/assets/myface.jpg)
+![]({{site.url}}/assets/myface.jpg) 
 
-My name is Facundo Gauna. Sometimes I go by Frank.
+My name is Facundo Gauna. Sometimes I go by Frank. You are allowed to pronounce my last name like *"gonna."* Hence the name of the blog.
 
-I'm a software developer from sunny Orlando, Fl `:palm_tree:`. I got a degree in Computer Engineering from University of Central Florida.
+I'm a software developer at [Nebbia Technology](http://nebbiatech.com) in Orlando, FL. I have a degree in Computer Engineering from University of Central Florida.
 
 I'm not active on Facebook, Twitter, or Google+ so you can follow me but I won't guarantee anything.
 Rarely on Skype either.  
@@ -18,3 +18,6 @@ Email me or shoot me a message on [LinkedIn](https://www.linkedin.com/in/facundo
 
 I enjoy coding quite a bit and I consider it one of my hobbies. I also like to play table tennis and attend Meetups in the Orlando area.
 Used to be a recreational gamer but I stopped so I could have time for other things. 
+
+
+
