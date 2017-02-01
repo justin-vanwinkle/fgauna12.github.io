@@ -2,4 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 _theme
+
 debug.log
+
+

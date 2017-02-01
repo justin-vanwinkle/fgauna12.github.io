@@ -6,7 +6,7 @@ permalink: /about/
 
 ![]({{site.url}}/assets/myface.jpg) 
 
-My name is Facundo Gauna. Sometimes I go by Frank. You are allowed to pronounce my last name like *"gonna."* Hence the name of the blog.
+My name is Facundo Gauna. Sometimes I go by Frank.
 
 I'm a software developer at [Nebbia Technology](http://nebbiatech.com) in Orlando, FL. I have a degree in Computer Engineering from University of Central Florida.
 
