@@ -110,11 +110,8 @@
  * Site footer
  */
 .site-footer {
-    @extend .dark-theme;
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background-color: $brand-color;
-    color: #fafafa;
 
     .username{
         margin-left: 3px;
