@@ -8,7 +8,6 @@ comments: true
 
 Recently, I finally got around to using VS Code more in my day to day.
 As of right now, I'm currently using it to write up this blog post using Jekyll and Markdown.
-This is a list of the commands I found the most useful so far. I tried to follow the [80/20 Rule](https://en.wikipedia.org/wiki/Pareto_principle) as much as possible.
 
 #### Command Palette (The Grandaddy) - `Ctrl + Shift + P`
 
