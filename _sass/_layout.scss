@@ -1,3 +1,8 @@
+@import "_mixins";
+
+$site-title-line-height: 56px;
+$site-title-padding: 20px;
+
 /**
  * Site header
  */
@@ -5,6 +10,7 @@
     border-top: 5px solid $brand-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    padding: $site-title-padding 0; 
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -15,9 +21,9 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 300;
-    line-height: 56px;
+    line-height: $site-title-line-height;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -35,7 +41,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: $site-title-line-height;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -198,6 +204,10 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        a {
+            @include big-n-bold-header(36px);
+            color: $brand-color;
+        }
     }
 }
 
@@ -220,10 +230,13 @@
     margin-bottom: $spacing-unit;
 }
 
+
+
 .post-title {
-    font-size: 42px;
+    font-size: 48px;
     letter-spacing: -1px;
     line-height: 1;
+    @include post-header(40px);
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -233,8 +246,13 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
+    p {
+        margin-top: $spacing-unit;
+    }
+
     h2 {
-        font-size: 32px;
+    
+        @include post-header(36px);
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -242,7 +260,8 @@
     }
 
     h3 {
-        font-size: 26px;
+        
+        @include post-header(32px);
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -250,7 +269,8 @@
     }
 
     h4 {
-        font-size: 20px;
+
+        @include post-header(26px);
 
         @include media-query($on-laptop) {
             font-size: 18px;

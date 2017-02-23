@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "VS Code Keyboard Shortcuts for Windows"
-date:   2017-01-31 21:52:14 -0400
+title:  "My VS Code Cheatsheet"
+date:   2017-01-31 21:52:14 -0500
 categories: ide
 comments: true
 ---

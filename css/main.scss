@@ -6,20 +6,23 @@
 
 
 // Our variables
-$secondary-font-family: 'Roboto', sans-serif;
-$base-font-family: 'Open Sans', sans-serif;
-$base-font-size:   16px;
+//$secondary-font-family: "Roboto Slab", serif;
+$secondary-font-family: "Open Sans", sans-serif;
+//$base-font-family: "Open Sans", sans-serif;
+$base-font-family: "Roboto Slab", serif;
+
+$base-font-size:   23px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 37px;
 
-$spacing-unit:     20px;
+$spacing-unit:     25px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #1B75BB;
 $secondary-color:  #404041;
-$brand-white-gray: #fafafa;
+$brand-white-gray: #FFF;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -52,5 +55,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab&subset=latin,latin-ext)
 ;

@@ -1,17 +1,19 @@
 ---
 layout: post
-title:  "When Unit Tests are Useless"
+title:  "When Unit Tests are a Waste of Time"
 date:   2017-02-19 10:00:00 -0500
 categories: ide
 comments: true
 ---
 
-## My worst fear: Wasting time
-When I'm working hard on a testing suite, my worst fear is it will be wasted work. **_poof!_** 30-50 tests on a feature... **gone**. Why? Because the feature is not wanted or needed. 
-So why keep the feature? Why keep the tests? It's just more code to maintain.
-While you might not agree that the tests are gone, we can agree that the tests will not prevent defects for features meaninful to the users.
+Ever wonder if the tests you're writting will pay off? Ever wonder if they'll catch any regressions? Sometimes, they don't. It's not because TDD doesn't work. It's not because you're bad at writing tests. 
+When your requirements are just assumptions, your tests are a waste of time.
 
-We should not be writing tests in fear that they'll be wasted work. The answer lies in the infamous testing pyramid.
+## My worst fear: Wasting time
+When I'm putting extra time towards unit tests, my worst fear is it will be wasted work. **_poof!_** 30-50 tests on a feature... **gone**. Why? Because the feature is not wanted or needed. 
+So why keep the feature? Why keep the tests? It's just more code to maintain.
+While you might not agree that the tests are gone, we can agree that the tests will not prevent defects for features meaningful to the users.
+Therefore, if we don't catch these meaningful defects, then the tests are just pretty green checkmarks.
 
 ## The Testing Pyramid
 
@@ -61,19 +63,10 @@ You're just accruing more and more useless code that you will have to maintain.
 By the way, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is another form of Agile. Although, it's not very popular it's worth getting familiar with so you can apply some of its concepts 
 in your everyday tasks.
 
-### 3. The Telephone Game
-
-We all know this game! It teaches us so much, yet we constantly play this game in our workplace. 
-We ask the a middle manager to prioritize features, he then asks his minions to gather the most needed features from their minions. 
-Sometimes there's even more people in the game. Unsurprisingly, at the end of the game we find out the end users' needs get misinterpreted.
-
-This is especially predominant in smaller development teams without project managers, business analysts, or scrum masters to groom the requirements.
-
-
 ## Some Solutions
 
 There's no single strategy that will guarantee every feature being highly valuable to your users. It's a hollistic progress.  
-It's analogous to trying to eating organic as much as possible so that you can be healthier and live longer. There's no single superfood that will make you live past 100.
+The key is to validate the requirements and weed out the assumptions. Anyone in the team can do this, including you.
 Here's some things that you can try:
 
 1. **Be Brave! Talk to the Customer!** - Yes! Sharpen those soft skills. 
