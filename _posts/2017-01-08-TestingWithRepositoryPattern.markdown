@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Query Object and Repository Pattern"
-date:   2017-01-08 21:52:14 -0400
+date:   2017-01-08 21:52:14 -0500
 categories: Unit-Testing Patterns
 comments: true
 ---
