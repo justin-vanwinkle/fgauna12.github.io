@@ -11,8 +11,8 @@ The Repository Pattern was seen as a way to tuck away all this logic and startin
 
 There's a huge drawback to repositories which **really really bugs me**.
 
-You can't test queries
-=========================
+## You can't test queries
+
 Permissions, dashboards, notifications, alerts, and search filters are all features that we create which rely **heavily** on querying data.
 **Queries often have business logic in them and we ought to test them.** 
 
@@ -42,8 +42,7 @@ You're a good citizen, a good programer, and you want to test your feature. Well
 I dont' know about you but I want to test it. I really really really want to test it. 
 There's business logic in that snippet. How do we avoid writing integration tests?
 
-An alternative: the Query object
-=========================
+## An alternative: the Query object
 
 It's a containment class that hold the query arguments and works in unison with your repository. 
 It this example it would look something like this:
