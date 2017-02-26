@@ -3,6 +3,16 @@
 $site-title-line-height: 56px;
 $site-title-padding: 20px;
 
+.img-large {
+    max-height: 500px
+}
+
+.img-center
+{
+    margin: 0 auto;
+    display: block;
+}
+
 /**
  * Site header
  */

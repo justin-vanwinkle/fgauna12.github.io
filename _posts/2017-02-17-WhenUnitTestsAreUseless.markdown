@@ -15,9 +15,9 @@ So why keep the feature? Why keep the tests? It's just more code to maintain.
 While you might not agree that the tests are gone, we can agree that the tests will not prevent defects for features meaningful to the users.
 Therefore, if we don't catch these meaningful defects, then the tests are just pretty green checkmarks.
 
-## The Testing Pyramid
+![Testing Pyramid]({{site.url}}//assets/TestingPyramid.png){:.img-center}
 
-![Testing Pyramid]({{site.url}}//assets/TestingPyramid.png)
+## The Testing Pyramid
 
 The premise of the testing pyramid is to show which tests pay the most dividents when finding regressions. Being at the bottom of the pyramid, unit tests are foundational. Every developer knows that unit tests are their responsibility. 
 It's not something that can be tasked to QA.
@@ -35,9 +35,9 @@ If you have more UI tests than integration tests, then regressions will be found
 
 Even if you had only unit tests as part of your test suite, you are capable of finding a sizable portion of regressions. 
 
-### 1. Volatile Requirements
+![Testing Pyramid]({{site.url}}//assets/TestingPyramidWithCustomerValue.png){:.img-center}
 
-![Testing Pyramid]({{site.url}}//assets/TestingPyramidWithCustomerValue.png)
+### 1. Volatile Requirements
 
 Undecisive customers. _Grrrr!!_ It's like building your testing pyramid on quick sand!
 Although, it can be frustrating, every changes their mind and as part of the [Agile Manifesto](http://agilemanifesto.org/) we have to **respond to change**.
