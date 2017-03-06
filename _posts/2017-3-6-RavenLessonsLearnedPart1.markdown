@@ -52,9 +52,9 @@ For instance, when attempting to build a route to `GET` a resource by ID:
 GET api/birds/{id}
 ```
 
-If `{id}` is `birds/1`, the Web API router won't be able to find the matching controller action.
+If ID is `birds/1`, the Web API router won't be able to find the matching controller action.
 
-Your first instinct might be try to use `int` or `Guid` IDs in your raven documents. But resist this urge. There's a simpler way. Just change the convention for the `/` portion of the Raven IDs.
+Your first instinct might be try to use `int` or `Guid` IDs in your raven documents. But resist this urge. There's a simpler way. Just change the convention for the identity separator.
 
 ```
 documentStore.Conventions.IdentityPartsSeparator = "-";
@@ -78,9 +78,9 @@ public class Birds_ByName : AbstractMultiMapIndexCreationTask
 {
 	public Birds_ByName()
 	{
-		AddMap<Owl>(owls => from o in owls select new { o.Name });
+      AddMap<Owl>(owls => from o in owls select new { o.Name });
 
-		AddMap<Eagle>(dogs => from e in eagles select new { e.Name });
+      AddMap<Eagle>(dogs => from e in eagles select new { e.Name });
 	}
 }
 
@@ -102,9 +102,9 @@ IList<Bird> results = session
 ``` csharp
 documentStore.Conventions.FindTypeTagName = type =>
 {
-  if (typeof(Bird).IsAssignableFrom(type))
-  return "Birds";
-  return DocumentConvention.DefaultTypeTagName(type);
+    if (typeof(Bird).IsAssignableFrom(type))
+    return "Birds";
+    return DocumentConvention.DefaultTypeTagName(type);
 }
 ```
 
@@ -118,7 +118,7 @@ from animal in docs.Birds
 select new { animal.Name }
 ``` 
 
-## 4. Large Document Collection? Read On
+## 4. Large Document Collection? Consider Disabling In-Memory Indexing
 
 Won't happen in most applications, but if you have limited resources on your RavenDB host and you expect a very large document collection (1 million+ documents), you might consider not storing the index results in memory. 
 
