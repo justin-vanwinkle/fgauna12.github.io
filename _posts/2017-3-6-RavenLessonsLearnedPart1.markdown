@@ -6,6 +6,7 @@ categories: RavenDB
 comments: true
 ---
 
+For the last 3 years, I've been using RavenDB in various projects. Most have been really positive experiences, but like any other technology, there's going to be gotchas. Here's a random collection of lessons learned from my point of view.
 
 ## When you try to boil the ocean, bad things happen
 
