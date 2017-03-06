@@ -10,7 +10,7 @@ For the last 3 years, I've been using RavenDB in various projects. Most have bee
 
 ## 1. When you try to boil the ocean, bad things happen
 
-### 128 - The out-of-the-box result limit on the client-side
+#### 128 - The out-of-the-box result limit on the client-side
 
 Sometimes we get lazy, and we do something like this:
 
@@ -30,12 +30,12 @@ Let's say that `IRepository<Bird>` forces us to implement a `GetAll()` method. O
 
 Some time later, you might notice that although you have 200+ documents, you're always getting 128 results from your query. This is because RavenDB is built to be **safe-by-default**, i.e. it won't let you boil the ocean and load all the documents into memory.
 
-### 1024 - The out-of-the-box result limit on the server side
+#### 1024 - The out-of-the-box result limit on the server side
 
 Similarly, if you try to by-pass the aforementioned limit by doing a `Take(1000)` or even worse `Take(int.Max)`, Raven will only give you 1024 documents because this is the limit on the server side. 
 In other circumstances, you might have a transformer that's trying to group results and take a count. Grouping data in a transformer is allowed only up to this limit. _Captain Obvious:_ grouping data from a transformer is allowed for the sake of transformation and not for aggregation. 
 
-### So what should you do then?
+#### So what should you do then?
 
 - Use [paging](https://ravendb.net/docs/article-page/3.5/csharp/indexes/querying/paging), it's really easy
 - If you **have** to iterate through all the documents because you're exporting to a CSV file or building a report, you can use the [Streaming API](https://ravendb.net/docs/article-page/3.5/csharp/client-api/session/querying/how-to-stream-query-results). This API allows you to iterate through the whole collection one document at a time. 
@@ -69,7 +69,7 @@ The RavenDB [documentation](https://ravendb.net/docs/article-page/3.5/csharp/ind
 Similar to how Entity Framework does it, you can store the entities separately or together. 
 
 
-### Separate Collections - Multi-Map Indexes
+#### Separate Collections - Multi-Map Indexes
 
 
 ``` csharp
@@ -97,7 +97,7 @@ IList<Bird> results = session
     
 ```
 
-### Same Collection - Overriding Default Tag Name
+#### Same Collection - Overriding Default Tag Name
 
 ``` csharp
 documentStore.Conventions.FindTypeTagName = type =>
