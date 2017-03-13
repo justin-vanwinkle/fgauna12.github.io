@@ -19,7 +19,7 @@ Therefore, if you have to perform a Lucene query to do a full-text search, you c
 Same can be said for aggregation queries using Map-Reduce.
 
 
-### Use the Raven Test Helper NuGet package
+### Use the Raven Test Helper NuGet Package
 When developing your indexes and testing them from the studio, you want to make sure that it's not wasted work. Spent a little extra time creating automated tests with the [Raven Test Helper NuGet](https://www.nuget.org/packages/RavenDB.Tests.Helpers/)  package.
 These tests pay huge dividends since *you're running an embedded version of RavenDB* and your tests don't have to be dependant on some server.
 
