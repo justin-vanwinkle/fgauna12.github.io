@@ -6,8 +6,7 @@ categories: RavenDB
 comments: true
 ---
 
-A continuation of my [RavenDB lessons learned](http://www.gaunacode.com/ravendb/2017/03/06/RavenLessonsLearnedPart1.html).
-Some tips on testing and what not to do.
+A continuation of my lessons learned on RavenDB. Some tips on testing and what not to do.
 
 ## 1. Testing Indexes is Really Really Really Important
 
