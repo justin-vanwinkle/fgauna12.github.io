@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shhh, keep your ASP.NET Core Secrets to Yourself"
+title:  "Shhh, keep your secrets to yourself in ASP.NET Core"
 date:   2017-03-28 22:00:00 -0500
 categories: ASP.NET Core
 comments: true
