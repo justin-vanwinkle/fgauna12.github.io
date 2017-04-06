@@ -30,30 +30,11 @@ Also generate your own Guid and add it as follows:
 </PropertyGroup>
 ```
 
-Then using the command line, navigate to ASP.NET Core project directory and use the .net CLI:
+Then using the command line, navigate to project directory and use the .net CLI:
 
 ```
-    C:\Shhhh>dotnet restore
-    C:\Shhhh>dotnet user-secrets --help
-    User Secrets Manager 1.0.0-rtm-10308
-
-    Usage: dotnet user-secrets [options] [command]
-
-    Options:
-    -?|-h|--help                        Show help information
-    --version                           Show version information
-    -v|--verbose                        Show verbose output
-    -p|--project <PROJECT>              Path to project, default is current directory
-    -c|--configuration <CONFIGURATION>  The project configuration to use. Defaults to 'Debug'
-    --id                                The user secret id to use.
-
-    Commands:
-    clear   Deletes all the application secrets
-    list    Lists all the application secrets
-    remove  Removes the specified user secret
-    set     Sets the user secret to the specified value
-
-    Use "dotnet user-secrets [command] --help" for more information about a command.
+    dotnet restore
+    dotnet user-secrets --help
 ```
 
 ### 2. Create your secrets
@@ -61,14 +42,15 @@ Then using the command line, navigate to ASP.NET Core project directory and use 
 Start storing your secrets! Like the `--help` command indicated, you can use the `set` command to start storing away.
 
 ```
-    C:\Shhhh>dotnet user-secrets set AppConnectionString SomeAmazingConnectionStringToADatabaseOnTheCloudThatYouDontWantOthersToKnowAbout
+    dotnet user-secrets set AppConnectionString SomeAmazingConnectionString
 ```
 
-You can very how it was stored by running the `list` command.
+The `set` command just takes in a key-value pair where the key is the secret and the value is the secret value.
+
+You can check it stored properly by running the `list` command.
 
 ```
-    C:\Repos\DeleteMe\DeleteMe>dotnet user-secrets list 
-    AppConnectionString = SomeAmazingConnectionStringToADatabaseOnTheCloudThatYouDontWantOthersToKnowAbout
+    dotnet user-secrets list 
 ```
 
 ### 3. Consume your secrets 
@@ -94,4 +76,7 @@ For example:
 1. **Secrets are not encrypted**. What this tooling buys you is the ability to manage configuration settings that you don't want to have in your source code repository.
 
 2. When working with others, you're going to have to share these secrets with them. At this point you might consider the Azure Key Vault or using a tool like LastPass.
- 
+
+3. ASP.NET Core projects hosted by Service Fabric might not work with this. Because of the way that configuration works in service fabric, even setting the `ASPNETCORE_ENVIRONMENT` environment variable was a challenge and it wasn't as straight forward as editing it from the project settings.
+
+*EDIT 4-6-2017* - Added a 3rd Caveat and clarified how to use the `set` command
