@@ -6,7 +6,6 @@ categories: ASP.NET Core Middleware
 comments: true
 ---
 
-ASP.NET Core changed everything. Some might like the fact that it's been reworked, but again that's why it's version 1.x instead of ASP.NET 5.x.
 The more time I spend writing ASP.NET Core applications, the more I begin to experience how extensible it is. Besides first-class usage of dependency injection, the middleware is one of my favorite features. Understanding how middleware works, will give you insight into the flexibility and simplicity of the new framework.
 
 ## Just Picture a Pipe
