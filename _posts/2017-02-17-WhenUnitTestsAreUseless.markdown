@@ -69,7 +69,7 @@ There's no single strategy that will guarantee every feature being highly valuab
 The key is to validate the requirements and weed out the assumptions. Anyone in the team can do this, including you.
 Here's some things that you can try:
 
-1. **Be Brave! Talk to the Customer!** - Yes! Sharpen those soft skills. 
+1. **Talk to the Customer!** - Yes! Sharpen those soft skills. 
     Fifteen-minutes with your users will give you a much greater perspective of what they do. Especially if you're part of a team without a project manager or business analyst. 
     Again, the [Agile Manifesto](http://agilemanifesto.org/) encouranges customer collaboration over negotiations
 2. **Hallway Usability Tests** - This is a cheap tool to see if your creation is intuitive. If your company is small, pull someone from the hallway ask them what they think. 
