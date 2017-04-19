@@ -78,7 +78,7 @@ Here's some things that you can try:
     Cloud prototypes are easy to share. Just a matter of sharing a link with your stakeholders and asking for feedback. When I build SPAs, I love using online code editors since most of code can be recycled for production with enough practice.
     If you're building a backend feature, philosophies like [DDD](https://en.wikipedia.org/wiki/Domain-driven_design) or [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) guide you to build a testable language that you can share with your domain experts. 
 4. **Release Early and often** - If you are part of an Agile team that releases software once every couple of months, then you're doing Agile within Waterfall. 
-    This is one the biggest tools when combating undecisive customers. 
+    This is one the biggest tools when combating indecisive customers. 
 5. **Think Holistically!** - Bottom line is that if you're building on top of unvalidated requirements, your test suite will be in jeopardy. Therefore, think holistically about the development process. Don't be a cog in the wheel.
     If you identify a culprit, step up and propose a POC or shadow some users. Be creative, and be willing to experiment. 
 
