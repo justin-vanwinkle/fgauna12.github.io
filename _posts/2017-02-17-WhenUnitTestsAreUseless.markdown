@@ -40,7 +40,7 @@ Even if you had only unit tests as part of your test suite, you are capable of f
 ### 1. Volatile Requirements
 
 Undecisive customers. _Grrrr!!_ It's like building your testing pyramid on quick sand!
-Although, it can be frustrating, every changes their mind and as part of the [Agile Manifesto](http://agilemanifesto.org/) we have to **respond to change**.
+Although, it can be frustrating, everyone changes their mind and as part of the [Agile Manifesto](http://agilemanifesto.org/) we have to **respond to change**.
 
 In other cases, people don't know what they want until they see it. Or, they're used to dealing with a quirky system so they ask for an identical feature.
 So if multiple weeks are spent of trying to satisfy requirements that were assumed to be requested due to need, their accompanying tests will be wasted work.
@@ -65,7 +65,7 @@ in your everyday tasks.
 
 ## Some Solutions
 
-There's no single strategy that will guarantee every feature being highly valuable to your users. It's a hollistic progress.  
+There's no single strategy that will guarantee every feature being highly valuable to your users. It's a hollistic process.  
 The key is to validate the requirements and weed out the assumptions. Anyone in the team can do this, including you.
 Here's some things that you can try:
 
@@ -76,7 +76,7 @@ Here's some things that you can try:
     If you're a one-man band, go to a coffee shop and buy someone coffee. If you're part of a larger organization and you have a bigger user-base, consider talking to your team about hosting some more [formal hallway usability tests](https://www.digitalgov.gov/2014/02/19/10-tips-for-better-hallway-usability-testing/). 
 3. **Make a POC** - If you're a building the front-end of a web app, consider spending a day or two putting together a mock-up using [Invisionapp](https://www.invisionapp.com/) or an online code editor like [Plnkr](http://plnkr.co/).
     Cloud prototypes are easy to share. Just a matter of sharing a link with your stakeholders and asking for feedback. When I build SPAs, I love using online code editors since most of code can be recycled for production with enough practice.
-    If you're building a backend feature, phylosophies like [DDD](https://en.wikipedia.org/wiki/Domain-driven_design) or [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) guide you to build a testable language that you can share with your domain experts. 
+    If you're building a backend feature, philosophies like [DDD](https://en.wikipedia.org/wiki/Domain-driven_design) or [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) guide you to build a testable language that you can share with your domain experts. 
 4. **Release Early and often** - If you are part of an Agile team that releases software once every couple of months, then you're doing Agile within Waterfall. 
     This is one the biggest tools when combating undecisive customers. 
 5. **Think Holistically!** - Bottom line is that if you're building on top of unvalidated requirements, your test suite will be in jeopardy. Therefore, think holistically about the development process. Don't be a cog in the wheel.
