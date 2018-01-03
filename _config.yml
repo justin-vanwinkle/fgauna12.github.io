@@ -20,3 +20,7 @@ linkedin_profile: www.linkedin.com/in/facundo-gauna-601b8a47
 
 # Build settings
 markdown: kramdown
+
+plugins:
+  - jemoji
+
