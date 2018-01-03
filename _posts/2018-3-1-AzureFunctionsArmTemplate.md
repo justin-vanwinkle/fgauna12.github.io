@@ -8,6 +8,7 @@ categories:
     - Infrastructure as Code
     - DevOps
 comments: true
+published: false
 ---
 
 Creating Azure functions is easy. Managing them can be a challenge. Much like microservices, functions can get problematic to maintain when having multiple environments. 
