@@ -12,7 +12,7 @@ As of right now, I'm currently using it to write up this blog post using Jekyll 
 #### Command Palette (The Grandaddy) - `Ctrl + Shift + P`
 
 
-![VS Code Command Palette]({{site.url}}//assets/command-palette.png)
+![VS Code Command Palette]({{site.baseurl}}/assets/command-palette.png)
 
 
 This shows the command palette. You can do pretty much everything from here.

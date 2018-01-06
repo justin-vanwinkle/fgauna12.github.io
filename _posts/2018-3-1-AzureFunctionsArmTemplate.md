@@ -124,11 +124,11 @@ Then create a deployment and specifying the arm template and its parameters:
 
 Example using `dev-facundo2` and an environment
 
-![]({{site.url}}/assets/2018-2-1/functionsarm_2.gif)
+![]({{site.baseurl}}/assets/2018-2-1/functionsarm_2.gif)
 
 #### The Result
 
-![]({{site.url}}/assets/2018-2-1/functionsarm_1.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/functionsarm_1.PNG)
 
 
 

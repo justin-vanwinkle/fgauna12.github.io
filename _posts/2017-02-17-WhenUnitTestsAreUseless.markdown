@@ -15,7 +15,7 @@ So why keep the feature? Why keep the tests? It's just more code to maintain.
 While you might not agree that the tests are gone, we can agree that the tests will not prevent defects for features meaningful to the users.
 Therefore, if we don't catch these meaningful defects, then the tests are just pretty green check-marks.
 
-![Testing Pyramid]({{site.url}}//assets/TestingPyramid.png){:.img-center}
+![Testing Pyramid]({{site.baseurl}}/assets/TestingPyramid.png){:.img-center}
 
 ## The Testing Pyramid
 
@@ -35,7 +35,7 @@ If you have more UI tests than integration tests, then regressions will be found
 
 Even if you had only unit tests as part of your test suite, you are capable of finding a sizable portion of regressions. 
 
-![Testing Pyramid]({{site.url}}//assets/TestingPyramidWithCustomerValue.png){:.img-center}
+![Testing Pyramid]({{site.baseurl}}/assets/TestingPyramidWithCustomerValue.png){:.img-center}
 
 ### 1. Volatile Requirements
 

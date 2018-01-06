@@ -38,17 +38,17 @@ All of this applies to Logic Apps too.
 
 ### Create a new Azure Function project
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_1.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_1.PNG)
 
 ### Add a function a trigger of your liking
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_2.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_2.PNG)
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_3.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_3.PNG)
 
 ### Pick the function trigger
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_4.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_4.PNG)
 
 ## 2. (Optional) Create the ARM Template
 
@@ -61,7 +61,7 @@ If you choose the dark side, then simply don't add the Azure Resource Group VSTS
 
 ## 3. Build and Release
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_10.gif)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_10.gif)
 
 ### Build Agent and Build Definition
 
@@ -71,14 +71,14 @@ Create a new build definition using the `ASP.NET` build definition template.
 
 Then, if you're trying this on a new solution, you can simply save and queue this definition.
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_5.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_5.PNG)
 
 ### Release Definition
 
 The release will be the slightly more complex part.
 It will be _very_ familiar to deploying an App Service.
 
-![Example Release Definition]({{site.url}}/assets/2018-2-1/azurefunctions_6.PNG)
+![Example Release Definition]({{site.baseurl}}/assets/2018-2-1/azurefunctions_6.PNG)
 
 #### 1. Deploy the ARM template (Optional)
 
@@ -86,20 +86,20 @@ It will be _very_ familiar to deploying an App Service.
 
 Start by adding an Azure Resource Group Deployment task to deploy the ARM template that will create the Azure Function Apps and their consumption service plans.
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_7.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_7.PNG)
 
 #### 2. Use the [App Service deployment task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/AzureRmWebAppDeployment/README.md) for each function app
 
 To deploy the function code, for each function app add an App Service deploy task.
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_8.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_8.PNG)
 
 You will notice that in the build artifact, there's a web deploy package for each of the function apps. 
 
 Make sure that you're deploying the right package for the appropriate function app.
 The web deploy is speficied on the `Package or folder` field.
 
-![]({{site.url}}/assets/2018-2-1/azurefunctions_9.PNG)
+![]({{site.baseurl}}/assets/2018-2-1/azurefunctions_9.PNG)
 
 Queue it up and give it a go!
 

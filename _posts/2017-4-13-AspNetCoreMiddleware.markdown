@@ -14,7 +14,7 @@ Just picture a pipe. Each segment in the pipe is a middleware component that you
 
 But this pipe is a special. This pipe also bi-directional. Meaning each middleware component will get called twice, once for a request coming in and once of the response going out.
 
-![Middleware Pipeline]({{site.url}}//assets/middleware-pipeline.png){:.img-center}
+![Middleware Pipeline]({{site.baseurl}}/assets/middleware-pipeline.png){:.img-center}
 
 ## Characteristics of the Middleware
 
