@@ -6,7 +6,7 @@ categories: Azure Service-Fabric Containers Azure
 comments: true
 ---
 
-![Azure Container Service vs Service Fabric]({{site.url}}//assets/ACS-vs-SF.png){:.img-center}
+![Azure Container Service vs Service Fabric]({{site.baseurl}}/assets/ACS-vs-SF.png){:.img-center}
 
 Companies like Netflix, Spotify, and Uber are poster childs for organizations using microservices successfully. They scale up/down with ease, they add new teams effortlessly, and they experiment with new features without much risk. Meanwhile, we're still developing the same monolithic apps with various layers and numerous design practices. We work hard to abide by best practices to further push off the imminent point of ["diminishing returns"](https://en.wikipedia.org/wiki/Diminishing_returns). _No wonder_, when we learn about these companies accomplishing so much a microservice architecture, we ask ourselves:
 
