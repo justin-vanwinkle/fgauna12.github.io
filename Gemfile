@@ -1,7 +1,9 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gem 'jemoji'
-
-# gem "rails"
+gem "tzinfo-data"
+gem "jekyll", "~> 3.7"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jekyll-paginate"
+gem "jekyll-gist"
+gem "jemoji"

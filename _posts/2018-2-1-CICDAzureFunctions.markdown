@@ -11,7 +11,7 @@ comments: true
 
 Azure functions are cute. You can fire up the online function editor from the Azure portal and start hacking away using many languages.
 In my case, I'd like to start writing some C# and being able to run it and debug it quickly. Eventually, I end up craving Visual Studio & ReSharper along with some unit tests.
-
+<!-- more -->
 Instead of using the Azure Portal, I like to use pre-compiled Azure functions [created from Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs)
 
 ## Why?

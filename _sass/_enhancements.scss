@@ -1,0 +1,9 @@
+.language-mermaid, .language-chart {
+    svg {
+      width: 100%;
+    }
+    display: none;
+    &[data-processed] {
+      display: block;
+    }
+  }

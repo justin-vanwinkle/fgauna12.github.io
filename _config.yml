@@ -1,26 +1,116 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+title:            Gauna Code
+description:      Where software, DevOps, and infrastructure come together.
+disqus_shortname: gaunacode
+reading_time:     true
+words_per_minute: 150
+url: https://gaunacode.netlify.com # When testing locally leave blank or use http://localhost:4000
 
-# Site settings
-title: Gauna Code
-myname: Facundo Gauna
-email: hello@gaunacode.com
-description: > # this means to ignore newlines until "baseurl:"
-  Software developer from Orlando, FL. I focus on building SPAs using AngularJS and .NET. Follow me on my journey to discover what I enjoy most.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fgauna12.github.io" # the base hostname & protocol for your site
-#url: "http://localhost:4000"
-twitter_username: gaunacode
-github_username:  fgauna12
-linkedin_profile: www.linkedin.com/in/facundo-gauna-601b8a47
+## => Owner/author information
+##############################
+owner:
+  name:           Facundo Gauna
+  avatar:         headshot.jpg
+  bio:            "🥑Avocado Eater | Lover of Nanoservices"
+  email:          
+  twitter:        gaunacode
+  facebook:       
+  github:         fgauna12
+  stackexchange:  
+  linkedin:       facundo-gauna-601b8a47
+  instagram:      
+  flickr:         
+  tumblr:         
+  google_plus: # +mmistakes
 
-# Build settings
+## => Background
+##############################
+# Background image to be tiled on all pages
+background: 
+
+## => Analytics
+##############################
+google_analytics:   UA-80721031-1
+google_verify:      # get this from your webmaster console
+bing_verify:        # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+
+## => Post
+##############################
+## excerpt
+excerpt_separator: <!-- more -->
+
+## => Paginate
+##############################
+paginate: 5 # Amount of post to show on home page
+
+## => Markdown Enhancements
+##############################
+## Mathjax
+mathjax: # false (default), true
+mathjax_autoNumber: # false (default), true
+
+## Mermaid
+mermaid: # false (default), true
+
+## Chart
+chart: # false (default), true
+
+## => CDN Source
+##############################
+sources: unpkg
+
+## => Build
+##############################
+timezone:    America/New_York
+future:      false  # publish future dated posts?
+permalink:   /:categories/:title/
+
+highlighter: rouge
 markdown: kramdown
 
-plugins:
-  - jemoji
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
+include: 
+  - .htaccess
+  - _pages
+exclude: 
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
+
+## => Plugins
+##############################
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
